@@ -4,6 +4,7 @@
     margin: 0 auto;
 }
 
+// header start
 .header {
     &__row {
         display: flex;
@@ -29,6 +30,9 @@
                 line-height: 30px;
                 /* identical to box height */
                 color: #263238;
+                &:hover {
+                    border-bottom: 2px solid #263238;
+                }
             }
         }
     }
@@ -38,16 +42,32 @@
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
-            line-height: 36px;
             /* identical to box height */
             color: #000000;
             border: 2px solid #263238;
             border-radius: 5px;
             padding: 17px 57px;
+            transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+            &:hover {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                /* identical to box height */
+                color: #FFFFFF;
+                background: #263238;
+                border: 2px solid #263238;
+                border-radius: 5px;
+                padding: 17px 57px;
+                transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+            }
         }
     }
 }
 
+// header end
+// ----------------------------
+//  main page start
 .main-page {
     &__row {
         display: flex;
@@ -94,14 +114,26 @@
             padding: 32px 118px;
             background: #263238;
             border-radius: 15px;
+            transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+            &:hover {
+                color: #000000;
+                border: 2px solid #263238;
+                background: #FFFFFF;
+                border-radius: 15px;
+                transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+                padding: 30px 116px;
+            }
         }
     }
     &__img {}
 }
 
+// main page end
+// ----------------------------
+// skills start
 .skills {
     &__header {
-        margin-top: 147px;
+        margin-top: 247px;
         text-align: center;
         margin-bottom: 96px;
     }
@@ -202,6 +234,15 @@
         padding: 17px 63px;
         background: #263238;
         border-radius: 5px;
+        transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+        &:hover {
+            color: #000000;
+            border: 2px solid #263238;
+            background: #F5F5F5;
+            transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+            padding: 15px 61px;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -256,6 +297,15 @@
         padding: 15px 52px;
         background: #263238;
         border-radius: 5px;
+        transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+        &:hover {
+            color: #000000;
+            border: 2px solid #263238;
+            background: #F5F5F5;
+            transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+            padding: 13px 50px;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -309,6 +359,15 @@
         padding: 15px 52px;
         background: #263238;
         border-radius: 5px;
+        transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+        &:hover {
+            color: #000000;
+            border: 2px solid #263238;
+            background: #F5F5F5;
+            transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+            padding: 13px 50px;
+            border-radius: 5px;
+        }
     }
 }
 
@@ -350,7 +409,7 @@
 .listening-button {
     padding-left: 48px;
     padding-top: 25px;
-    padding-bottom: 83px;
+    padding-bottom: 93px;
     a {
         font-family: 'Poppins';
         font-style: normal;
@@ -362,5 +421,284 @@
         padding: 15px 52px;
         background: #263238;
         border-radius: 5px;
+        transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+        &:hover {
+            color: #000000;
+            border: 2px solid #263238;
+            background: #F5F5F5;
+            transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+            padding: 13px 50px;
+            border-radius: 5px;
+        }
+    }
+}
+
+// skills end
+// ----------------------------
+// about us start
+.about-us {
+    margin-top: 182px;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__body {
+        &_title {
+            padding-bottom: 23px;
+            h2 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 80px;
+                /* identical to box height, or 167% */
+                color: #000000;
+            }
+        }
+        &_discription {
+            padding-bottom: 40px;
+            max-width: 635px;
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #8F95A5;
+            }
+        }
+        &_numbers {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+        }
+    }
+    &__img {
+        img {
+            max-width: 500px;
+        }
+    }
+}
+
+.numbers {
+    &__element {
+        &_number {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 80px;
+            /* identical to box height, or 167% */
+            color: #2A3246;
+            opacity: 0;
+        }
+        &_name {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            /* identical to box height */
+            color: #8F95A5;
+        }
+    }
+}
+
+// about us end
+// ------------------------
+// price start
+.price {
+    &__header {
+        margin-top: 222px;
+        text-align: center;
+    }
+    &__title {
+        padding-bottom: 71px;
+        h2 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 80px;
+            /* identical to box height, or 167% */
+            color: #000000;
+        }
+    }
+    &__row {}
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__column {
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &_img {
+            height: 350px;
+            img {
+                max-width: 350px;
+            }
+        }
+        &_body {}
+        &_body-title {
+            padding-bottom: 20px;
+            h2 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 48px;
+                /* identical to box height, or 160% */
+                color: #263238;
+            }
+        }
+        &_body-discription {
+            padding-bottom: 30px;
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #8F95A5;
+            }
+        }
+        &_body-price {
+            text-align: center;
+            max-width: 240px;
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 45px;
+                /* identical to box height */
+                color: #263238;
+                background: #EEEEEE;
+                border-radius: 5px;
+                padding: 5px 15px;
+            }
+        }
+    }
+}
+
+.span-class {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #546269;
+}
+
+//  price end
+// --------------------------
+// contact us start
+.contact-us {
+    margin-top: 262px;
+    margin-bottom: 132px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        img {
+            max-width: 477px;
+        }
+    }
+    &__body {
+        &_title {
+            padding-bottom: 27px;
+            h2 {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 80px;
+                /* identical to box height, or 167% */
+                color: #000000;
+            }
+        }
+        &_discription {
+            padding-bottom: 57px;
+            max-width: 776px;
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #8F95A5;
+            }
+        }
+        &_form {}
+    }
+}
+
+.form-container {}
+
+.btn-otp {
+    width: 264px;
+    height: 80px;
+    background: #263238;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+    /* identical to box height */
+    color: #FFFFFF;
+    &:hover {
+        color: #000000;
+        border: 2px solid #263238;
+        background: #FFFFFF;
+        transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+    }
+}
+
+#email {
+    width: 450px;
+    height: 80px;
+    padding: 33px;
+    border: 1px solid #8F95A5;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #8F95A5;
+    margin-right: 4px;
+}
+
+// contact us end
+// -----------------------
+// footer start
+.footer {
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #C4C4C4;
+    }
+    &__logo {}
+    &__content {
+        padding: 55px;
+        p {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+            color: #8F95A5;
+        }
     }
 }
