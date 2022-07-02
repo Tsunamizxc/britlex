@@ -20,17 +20,16 @@
         ul {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: start;
             a {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
-                line-height: 24px;
                 /* identical to box height */
                 color: #263238;
                 &:hover {
-                    border-bottom: 2px solid #263238;
+                    border-bottom: none;
                 }
             }
         }
@@ -99,6 +98,7 @@
     height: 26px;
     cursor: pointer;
     z-index: 1;
+    transition-duration: .25s;
 }
 
 .menu__btn>span,
@@ -109,8 +109,7 @@
     width: 100%;
     height: 2px;
     background-color: black;
-    ;
-    transition-duration: .25s;
+    transition-duration: .45s;
 }
 
 .menu__btn>span::before {
@@ -135,40 +134,48 @@
     list-style: none;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
+    transition-duration: .15s;
 }
 
 .menu__item {
     display: block;
-    padding: 12px 24px;
+    padding-left: 10px;
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
-    margin: 20px;
+    margin: 10px;
 }
 
 .dontadap {
     border: 2px solid #263238;
     border-radius: 5px;
-    max-width: 170px;
-    padding: 12px 40px;
+    padding: 16px 65px;
     text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #000000;
     transition: border-color 0.5s, background-color 0.5s, color 0.5s;
     &:hover {
+        padding: 16px 65px;
+        text-align: center;
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
         /* identical to box height */
+        color: #000000;
         color: #FFFFFF;
         background: #263238;
         border: 2px solid #263238;
         border-radius: 5px;
-        padding: 10px 38px;
         transition: border-color 0.5s, background-color 0.5s, color 0.5s;
     }
 }
@@ -248,7 +255,7 @@
     &__header {
         margin-top: 56px;
         text-align: center;
-        margin-bottom: 96px;
+        margin-bottom: 37px;
     }
     &__title {
         h2 {
@@ -549,7 +556,7 @@
 // ----------------------------
 // about us start
 .about-us {
-    margin-top: 182px;
+    margin-top: 82px;
     &__row {
         display: flex;
         align-items: center;
@@ -562,21 +569,21 @@
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 36px;
-                line-height: 80px;
-                /* identical to box height, or 222% */
+                font-size: 30px;
+                line-height: 40px;
+                /* identical to box height, or 267% */
                 color: #000000;
             }
         }
         &_discription {
             padding-bottom: 40px;
-            max-width: 535px;
+            max-width: 320px;
             p {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 14px;
+                line-height: 21px;
                 color: #8F95A5;
             }
         }
@@ -588,30 +595,28 @@
     }
     &__img {
         img {
-            max-width: 336px;
+            max-width: 295px;
         }
     }
 }
 
 .numbers {
-    max-width: 500px;
     &__element {
         &_number {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
-            font-size: 30px;
-            line-height: 80px;
-            /* identical to box height, or 267% */
+            font-size: 22px;
+            line-height: 40px;
+            /* identical to box height, or 364% */
             color: #2A3246;
-            opacity: 0;
         }
         &_name {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 13px;
+            line-height: 20px;
             /* identical to box height */
             color: #8F95A5;
         }
@@ -623,18 +628,18 @@
 // price start
 .price {
     &__header {
-        margin-top: 222px;
+        margin-top: 88px;
         text-align: center;
     }
     &__title {
-        padding-bottom: 71px;
+        padding-bottom: 40px;
         h2 {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
-            font-size: 48px;
+            font-size: 30px;
             line-height: 80px;
-            /* identical to box height, or 167% */
+            /* identical to box height, or 267% */
             color: #000000;
         }
     }
@@ -645,41 +650,45 @@
     }
     &__column {
         max-width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         &_img {
-            height: 250px;
+            height: 220px;
             img {
-                max-width: 250px;
+                max-width: 220px;
             }
         }
-        &_body {}
+        &_body {
+            display: flex;
+            flex-direction: column;
+        }
         &_body-title {
             padding-bottom: 20px;
+            max-width: 124px;
             h2 {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 22px;
-                line-height: 34px;
-                /* identical to box height, or 155% */
+                font-size: 20px;
+                line-height: 28px;
+                /* or 140% */
+                color: #263238;
             }
         }
         &_body-discription {
-            padding-bottom: 30px;
+            padding-bottom: 70px;
+            max-height: 84px;
             p {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 14px;
+                line-height: 21px;
                 color: #8F95A5;
             }
         }
         &_body-price {
             text-align: center;
             max-width: 240px;
+            padding-top: 20px;
             p {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -691,6 +700,10 @@
             }
         }
     }
+}
+
+.self-study {
+    max-width: 150px;
 }
 
 .span-class {

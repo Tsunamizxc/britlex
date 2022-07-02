@@ -1,4 +1,4 @@
-@import "nullstyle.scss";
+@import "nullstyle";
 .container {
     max-width: 1340px;
     margin: 0 auto;
@@ -532,18 +532,19 @@
     }
     &__column {
         max-width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         &_img {
             height: 350px;
             img {
                 max-width: 350px;
             }
         }
-        &_body {}
+        &_body {
+            display: flex;
+            flex-direction: column;
+        }
         &_body-title {
             padding-bottom: 20px;
+            max-width: 554px;
             h2 {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -556,6 +557,7 @@
         }
         &_body-discription {
             padding-bottom: 30px;
+            max-height: 90px;
             p {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -568,6 +570,7 @@
         &_body-price {
             text-align: center;
             max-width: 240px;
+            padding-top: 20px;
             p {
                 font-family: 'Poppins';
                 font-style: normal;
@@ -708,6 +711,10 @@
 }
 
 #menu__toggle {
+    display: none;
+}
+
+.logomenu {
     display: none;
 }
 
