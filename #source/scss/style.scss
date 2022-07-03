@@ -718,10 +718,18 @@
     display: none;
 }
 
+.skills-phone__row {
+    display: none;
+}
+
 @media (min-width:992px) and (max-width: 1102px) {
     @import "_992px";
 }
 
 @media (min-width: 772px) and (max-width: 992px) {
     @import "_772px";
+}
+
+@media (min-width: 575px) and (max-width: 772px) {
+    @import "_575px";
 }
