@@ -722,6 +722,18 @@
     display: none;
 }
 
+.about-us__title-phone {
+    display: none;
+}
+
+.price-low {
+    display: none;
+}
+
+.contact-us__title-phone {
+    display: none;
+}
+
 @media (min-width:992px) and (max-width: 1102px) {
     @import "_992px";
 }
