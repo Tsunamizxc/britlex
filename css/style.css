@@ -2857,12 +2857,13 @@ h6 {
     padding-top: 50px;
   }
   .reading-img img {
+    position: static;
     max-width: 235px;
   }
   .reading-title {
     margin: 0;
     padding: 0;
-    padding-top: 165px;
+    padding-top: 10px;
     padding-left: 15px;
   }
   .reading-title h2 {
@@ -3645,12 +3646,13 @@ h6 {
     padding-bottom: 1px;
   }
   .writing-img img {
+    position: static;
     max-width: 185px;
   }
   .writing-title {
     margin: 0;
     padding: 0;
-    padding-top: 190px;
+    padding-top: 15px;
     padding-left: 15px;
   }
   .writing-title h2 {
@@ -3690,12 +3692,13 @@ h6 {
     padding-top: 50px;
   }
   .reading-img img {
+    position: static;
     max-width: 235px;
   }
   .reading-title {
     margin: 0;
     padding: 0;
-    padding-top: 165px;
+    padding-top: 15px;
     padding-left: 15px;
   }
   .reading-title h2 {

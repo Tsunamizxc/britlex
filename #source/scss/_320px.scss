@@ -362,6 +362,8 @@
     padding-top: 30px;
     padding-bottom: 1px;
     img {
+        position: static;
+        ;
         max-width: 185px;
     }
 }
@@ -369,7 +371,7 @@
 .writing-title {
     margin: 0;
     padding: 0;
-    padding-top: 190px;
+    padding-top: 15px;
     padding-left: 15px;
     h2 {
         font-family: 'Poppins';
@@ -410,6 +412,7 @@
     margin: 0;
     padding-top: 50px;
     img {
+        position: static;
         max-width: 235px;
     }
 }
@@ -417,7 +420,7 @@
 .reading-title {
     margin: 0;
     padding: 0;
-    padding-top: 165px;
+    padding-top: 15px;
     padding-left: 15px;
     h2 {
         font-family: 'Poppins';
